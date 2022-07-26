@@ -1,17 +1,17 @@
-## Guide to run YCSB on AJD instance
+## Guide to run YCSB on Oracle NoSQL database service
 
-This section describes how to run YCSB on AJD instance in Oracle Cloud.
+This section describes how to run YCSB on Oracle NoSQL database service in Oracle Cloud.
 
 ### 1. Provision AJD Instance.
 
-Provision an AJD instance in Oracle Cloud using the [instructions](https://docs.oracle.com/en/cloud/paas/autonomous-json-database/) given [here](https://docs.oracle.com/en/cloud/paas/autonomous-json-database/).
-Configure the instance with 8 OCPUs and 1TB of storage. Download the wallet to access the AJD instance from a client node (in this case OCI compute node). 
+Provision an Oracle NoSQL database service in Oracle Cloud using the [instructions](https://docs.oracle.com/en/cloud/paas/autonomous-json-database/) given [here](https://docs.oracle.com/en/cloud/paas/autonomous-json-database/).
+Configure the instance with 8 OCPUs and 1TB of storage. Download the wallet to access the Oracle NoSQL database service from a client node (in this case OCI compute node). 
 
 
 ### 2. Provision a compute node(s) in Oracle Cloud Infrastructure.   
 
 Provision a compute node for driving the load in Oracle Cloud infrastructure using the [instructions](https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/launchinginstance.htm#Creating_an_Instance) mentioned [here](https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/launchinginstance.htm#Creating_an_Instance).
-The compute node needs to be provisioned in the same region as the AJD instance. Configure the instance to connect to the AJD instance via JDBC by following the [instructions](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/connect-jdbc-thin-wallet.html#GUID-5ED3C08C-1A84-4E5A-B07A-A5114951AA9E).
+The compute node needs to be provisioned in the same region as the Oracle NoSQL database service. Configure the instance to connect to the Oracle NoSQL database service via JDBC by following the [instructions](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/connect-jdbc-thin-wallet.html#GUID-5ED3C08C-1A84-4E5A-B07A-A5114951AA9E).
 
 ### 3. Install Java and Maven
 
